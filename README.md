@@ -84,7 +84,7 @@ These features are placeholders and would require additional backend integration
 
 You can try out the portfolio live, deployed on Vercel:
 
-> [Demo on Vercel](https://vercel.com/) <!-- Replace with your actual Vercel deployment URL after deployment -->
+> [Demo on Vercel](https://8bitportfolio-i7zs.vercel.app/)
 
 ## 🚀 Deployment
 
