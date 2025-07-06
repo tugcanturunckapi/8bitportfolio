@@ -3,19 +3,15 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import {
-  Sun,
-  Moon,
   Mail,
   Download,
   Github,
   Linkedin,
-  Twitter,
   Volume2,
   VolumeX,
-  Menu as MenuIcon,
-  X as CloseIcon,
 } from "lucide-react";
 import Head from "next/head";
+import Image from "next/image";
 import React from "react";
 import aboutData from "./about.json" assert { type: "json" };
 import skillsData from "./skills.json" assert { type: "json" };
@@ -152,15 +148,6 @@ export default function Home() {
     phone: string;
     address: string;
   };
-
-  const education = educationData as {
-    school: string;
-    degree: string;
-    field: string;
-    startYear: number;
-    endYear: number;
-    description: string;
-  }[];
 
   const experiences = experiencesData as {
     title: string;
@@ -304,14 +291,14 @@ export default function Home() {
             >
               <div className="max-w-[220px] w-full aspect-square mx-auto bg-green-400 pixel-border rounded-lg flex items-center justify-center overflow-hidden inline-block">
                 {/* Profil fotoğrafı */}
-                <img
+                <Image
                   src="/profile.png"
                   alt="Profile"
                   className="w-full h-full object-cover pixel-avatar"
                   style={{ imageRendering: "pixelated" }}
                   width={220}
                   height={220}
-                  loading="lazy"
+                  priority
                 />
               </div>
             </motion.div>
@@ -341,7 +328,7 @@ export default function Home() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-green-700 mb-8"
             >
-              I'M A FRONTEND DEVELOPER
+              I&apos;M A FRONTEND DEVELOPER
             </motion.p>
 
             <motion.button
