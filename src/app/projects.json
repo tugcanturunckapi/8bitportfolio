@@ -1,0 +1,26 @@
+[
+  {
+    "title": "8-Bit Portfolio Website",
+    "description": "Bu 8-bit retro tarzı portfolio websitesi. Next.js, TypeScript, Tailwind CSS ve Framer Motion kullanılarak geliştirildi.",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "link": "#"
+  },
+  {
+    "title": "E-Commerce Platform",
+    "description": "React, Node.js ve Stripe ile geliştirilmiş tam kapsamlı e-ticaret platformu.",
+    "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+    "link": "#"
+  },
+  {
+    "title": "Task Manager App",
+    "description": "Drag & drop özellikli gerçek zamanlı görev yönetimi uygulaması.",
+    "tech": ["React", "Firebase", "DnD Kit"],
+    "link": "#"
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "Konum tabanlı hava durumu tahminleri ile hava durumu uygulaması.",
+    "tech": ["React", "OpenWeather API", "Geolocation"],
+    "link": "#"
+  }
+]

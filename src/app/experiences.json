@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Grafik ve IT Destek Uzmanı",
+    "company": "Freelance",
+    "period": "2021 - Mevcut",
+    "location": "İzmir, Türkiye",
+    "description": "Sosyal medya tasarımları, broşür, kartvizit ve logo tasarımları oluşturmak. Markalar ve bireysel müşteriler için özgün ve yaratıcı görseller tasarlamak. Photoshop ve diğer tasarım araçlarını kullanarak profesyonel çalışmalar hazırlamak. Web sitelerinin içerik ve tasarım düzenlemelerini yapmak, teknik destek sağlamak.",
+    "tech": [
+      "Photoshop",
+      " Illustrator",
+      " Figma",
+      " HTML",
+      " CSS",
+      "W ordPress"
+    ]
+  },
+  {
+    "title": "Front-end Geliştirici Stajyeri",
+    "company": "İzmir İnovasyon ve Teknoloji A.Ş.",
+    "period": "19/02/2024 - 27/05/2024",
+    "location": "İzmir, Türkiye",
+    "description": "Front-end geliştirme projelerinde aktif rol almak. HTML, CSS, Bootstrap ve Javascript kullanarak kullanıcı dostu ve etkileşimli web sayfaları oluşturmak. Mevcut projelerdeki hataları tespit etmek ve düzeltmek. Figma üzerinden UI/UX tasarımları uygulamak.",
+    "tech": ["HTML", " CSS", " Bootstrap", " Javascript", "F igma"]
+  },
+  {
+    "title": "Yazılım Geliştirici Stajyeri",
+    "company": "Asay Vad",
+    "period": "06/2022 - 07/2022",
+    "location": "İzmir, Türkiye",
+    "description": "Laravel framework ile projeler geliştirme. PHP tabanlı web uygulamaları geliştirme. Proje yönetimi sürecine katılma.",
+    "tech": ["Laravel", " PHP"]
+  },
+  {
+    "title": "Mühendislik Stajyeri",
+    "company": "9 Eylül Mühendislik",
+    "period": "07/2019 - 09/2019",
+    "location": "İzmir, Türkiye",
+    "description": "Yazılım geliştirme ve mühendislik süreçlerine destek.",
+    "tech": ["Yazılım Geliştirme"]
+  },
+  {
+    "title": "IT Destek Stajyeri",
+    "company": "Erbil Bilgisayar",
+    "period": "07/2018 - 09/2018",
+    "location": "İzmir, Türkiye",
+    "description": "IT destek ve bilgisayar donanım/yazılım sorunlarına çözüm.",
+    "tech": ["IT Destek"]
+  }
+]

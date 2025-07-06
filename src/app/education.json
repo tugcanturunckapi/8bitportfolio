@@ -1,0 +1,26 @@
+[
+  {
+    "school": "Manisa Celal Bayar Üniversitesi",
+    "degree": "Lisans",
+    "field": "Bilgisayar Mühendisliği (%100 İngilizce)",
+    "startYear": 2019,
+    "endYear": 2024,
+    "description": "Bilgisayar Mühendisliği bölümünden mezun. Teknik beceriler ve yazılım geliştirme üzerine odaklanıldı."
+  },
+  {
+    "school": "Anadolu Üniversitesi",
+    "degree": "Lisans (Açıköğretim)",
+    "field": "İşletme",
+    "startYear": 2019,
+    "endYear": 2025,
+    "description": "İşletme alanında açıköğretim eğitimi."
+  },
+  {
+    "school": "Ege Üniversitesi",
+    "degree": "Ön Lisans",
+    "field": "Bilgisayar Programcılığı",
+    "startYear": 2017,
+    "endYear": 2019,
+    "description": "Bilgisayar programcılığı temelleri ve yazılım geliştirme."
+  }
+]

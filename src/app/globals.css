@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: "Press Start 2P", cursive;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  overflow-x: hidden;
+}
+
+/* 8-bit Retro Styles */
+.retro-bg {
+  background: linear-gradient(45deg, #0f380f, #306230, #8bac0f, #9bbc0f);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pixel-border {
+  border: 4px solid #0f380f;
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 0px rgba(0, 0, 0, 0.3), 4px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+.pixel-button {
+  background: #8bac0f;
+  border: 4px solid #0f380f;
+  color: #0f380f;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 0px rgba(0, 0, 0, 0.3), 4px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+.pixel-button:hover {
+  transform: translateY(2px);
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 0px rgba(0, 0, 0, 0.3), 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.pixel-button:active {
+  transform: translateY(4px);
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 0px rgba(0, 0, 0, 0.3), 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+.pixel-card {
+  background: #9bbc0f;
+  border: 4px solid #0f380f;
+  padding: 20px;
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 0px rgba(0, 0, 0, 0.3), 6px 6px 0px rgba(0, 0, 0, 0.8);
+}
+
+.pixel-input {
+  background: #9bbc0f;
+  border: 4px solid #0f380f;
+  color: #0f380f;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  padding: 12px;
+  width: 100%;
+  box-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 0px rgba(255, 255, 255, 0.3);
+}
+
+.pixel-input:focus {
+  outline: none;
+  border-color: #8bac0f;
+  box-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 0px rgba(255, 255, 255, 0.3),
+    0 0 0 2px rgba(139, 172, 15, 0.5);
+}
+
+.skill-bar {
+  background: #0f380f;
+  border: 2px solid #306230;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background: linear-gradient(90deg, #8bac0f, #9bbc0f);
+  height: 100%;
+  transition: width 1s ease;
+}
+
+.pixel-avatar {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Floating pixel elements */
+.floating-pixel {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #9bbc0f;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Theme toggle */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pixel-button {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+
+  .pixel-input {
+    font-size: 8px;
+    padding: 8px;
+  }
+}
+
+.pixel-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  background: #8bac0f;
+  border: 4px solid #0f380f;
+  box-shadow: 2px 2px 0px #0f380f, 4px 4px 0px #306230;
+  border-radius: 0;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.pixel-slider:focus {
+  outline: 2px solid #306230;
+}
+.pixel-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #0f380f;
+  border: 4px solid #9bbc0f;
+  box-shadow: 2px 2px 0px #306230;
+  cursor: pointer;
+  border-radius: 0;
+}
+.pixel-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #0f380f;
+  border: 4px solid #9bbc0f;
+  box-shadow: 2px 2px 0px #306230;
+  cursor: pointer;
+  border-radius: 0;
+}
+.pixel-slider::-ms-thumb {
+  width: 24px;
+  height: 24px;
+  background: #0f380f;
+  border: 4px solid #9bbc0f;
+  box-shadow: 2px 2px 0px #306230;
+  cursor: pointer;
+  border-radius: 0;
+}
+.pixel-slider::-webkit-slider-runnable-track {
+  height: 16px;
+  background: #8bac0f;
+}
+.pixel-slider::-ms-fill-lower {
+  background: #8bac0f;
+}
+.pixel-slider::-ms-fill-upper {
+  background: #8bac0f;
+}
+.pixel-slider:disabled {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
+
+/* Navbar custom styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hamburger menu responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    padding: 16px 0 !important;
+  }
+  nav li {
+    width: 100%;
+  }
+  nav a.pixel-button {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}

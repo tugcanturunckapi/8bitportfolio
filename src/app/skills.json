@@ -1,0 +1,12 @@
+[
+  { "name": "HTML", "level": 85 },
+  { "name": "CSS", "level": 70 },
+  { "name": "Javascript", "level": 50 },
+  { "name": "Bootstrap 5", "level": 40 },
+  { "name": "React", "level": 40 },
+  { "name": "Python (Beginner)", "level": 20 },
+  { "name": "Adobe Photoshop", "level": 60 },
+  { "name": "Adobe Illustrator", "level": 40 },
+  { "name": "Figma", "level": 50 },
+  { "name": "UI/UX Design", "level": 40 }
+]
